@@ -472,6 +472,22 @@
         "value": "{ref.secondary.secondary40}",
         "type": "color"
       }
+    },
+    "gradients": {
+      "primary": {
+        "default": {
+          "value": "linear-gradient(45deg, $ref.primary.primary80 0%, $ref.primary.primary40 100%)",
+          "type": "color"
+        },
+        "hover": {
+          "value": "linear-gradient(45deg, $ref.primary.primary90 0%, $ref.primary.primary40 100%)",
+          "type": "color"
+        },
+        "active": {
+          "value": "linear-gradient(45deg, $ref.primary.primary90 0%, $ref.primary.primary50 100%)",
+          "type": "color"
+        }
+      }
     }
   },
   "$themes": []
