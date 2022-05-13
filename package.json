@@ -1,0 +1,15 @@
+{
+  "name": "@backlight-dev/@rude-joke-q8j0o.creatorsiso-design",
+  "version": "0.0.0",
+  "description": "",
+  "license": "MIT",
+  "type": "module",
+  "homepage": "{{ homepage }}",
+  "scripts": {
+    "serve": "npx backlight@latest serve 0vZeMKGixmHBxMoETT2k --open"
+  },
+  "devDependencies": {
+    "@divriots/dockit-core": "^0.7.2",
+    "lit": "^2.2.0"
+  }
+}
