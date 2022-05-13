@@ -1,10 +1,10 @@
 {
-  "name": "@backlight-dev/@rude-joke-q8j0o.creatorsiso-design",
-  "version": "0.0.0",
-  "description": "",
+  "name": "creatorsiso-design",
+  "version": "0.1.0",
+  "description": "My personal Design System using Design Tokens and Style-Dictionary.",
   "license": "MIT",
   "type": "module",
-  "homepage": "{{ homepage }}",
+  "homepage": "creatorsiso.xyz",
   "scripts": {
     "serve": "npx backlight@latest serve 0vZeMKGixmHBxMoETT2k --open"
   },

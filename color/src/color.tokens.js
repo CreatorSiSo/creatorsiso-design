@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Thu, 03 Mar 2022 12:40:35 GMT
+ * Generated on Fri, 13 May 2022 17:11:13 GMT
  */
 
 export const StarterCoreColorPrimaryBase = "#14b8a6";
