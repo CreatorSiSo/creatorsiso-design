@@ -462,6 +462,16 @@
           "type": "color"
         }
       }
+    },
+    "source": {
+      "primary": {
+        "value": "{ref.primary.primary40}",
+        "type": "color"
+      },
+      "secondary": {
+        "value": "{ref.secondary.secondary40}",
+        "type": "color"
+      }
     }
   },
   "$themes": []
