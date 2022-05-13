@@ -1,0 +1,21 @@
+/**
+ * Do not edit directly
+ * Generated on Fri, 13 May 2022 18:32:08 GMT
+ */
+
+:root {
+  --cs-button-border-radius-mobile: 0;
+  --cs-button-border-radius-desktop: 8px;
+  --cs-button-heading-color: #ff0000;
+  --cs-button-text-color: #111111;
+  --cs-color-base-gray-light: #cccccc;
+  --cs-color-base-gray-medium: #999999;
+  --cs-color-base-gray-dark: #111111;
+  --cs-color-base-red: #ff0000;
+  --cs-color-base-green: #00ff00;
+  --cs-color-font-base: #ff0000;
+  --cs-color-font-secondary: #00ff00;
+  --cs-color-font-tertiary: #111111;
+  --cs-radii-none: 0;
+  --cs-radii-sm: 8px;
+}
