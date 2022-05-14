@@ -2,28 +2,12 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
+		<link rel="icon" href="/favicon.ico" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Style Tests</title>
+
+		<script type="module" src="/src/main.ts"></script>
 	</head>
-	<style>
-		@import url(dist/css/_variables.css);
-
-		:where(button) {
-			border: none;
-		}
-
-		.btn {
-			border-radius: 1rem;
-			padding: 1rem;
-		}
-
-		.btn--primary {
-			color: var(--cs-ref-primary-primary100);
-			background-color: var(--cs-ref-primary-primary40);
-		}
-	</style>
-	<body>
-		<button class="btn btn--primary">Button/Primary</button>
-	</body>
+	<body id="app"></body>
 </html>
