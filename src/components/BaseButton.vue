@@ -1,5 +1,5 @@
 <script script lang="ts">
-import { defineComponent } from 'vue';
+import { defineComponent } from 'vue'
 
 export default defineComponent({
 	name: 'BaseButton',
@@ -11,10 +11,10 @@ export default defineComponent({
 		builtInClasses() {
 			return {
 				'button--disabled': this.disabled,
-			};
+			}
 		},
 	},
-});
+})
 </script>
 
 <template>

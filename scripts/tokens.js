@@ -1,7 +1,7 @@
-import StyleDictionary from 'style-dictionary';
+import StyleDictionary from 'style-dictionary'
 
-const tokenPrefix = 'cs';
-const outputDir = 'src/assets/variables/';
+const tokenPrefix = 'cs'
+const outputDir = 'src/assets/variables/'
 
 const styleDictionary = StyleDictionary.extend({
 	source: ['tokens/**/*.tokens.json'],
@@ -39,6 +39,6 @@ const styleDictionary = StyleDictionary.extend({
 			files: [{ destination: 'variables.js', format: 'javascript/es6' }],
 		},
 	},
-});
+})
 
-styleDictionary.buildAllPlatforms();
+styleDictionary.buildAllPlatforms()
