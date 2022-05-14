@@ -508,6 +508,28 @@
             "value": "{ref.primary.primary10}",
             "type": "color"
           }
+        },
+        "elevation": {
+          "surface1": {
+            "value": "rgba({source.primary}, 0.05)",
+            "type": "color"
+          },
+          "surface2": {
+            "value": "rgba({source.primary}, 0.08)",
+            "type": "color"
+          },
+          "surface3": {
+            "value": "rgba({source.primary}, 0.11)",
+            "type": "color"
+          },
+          "surface4": {
+            "value": "rgba({source.primary}, 0.12)",
+            "type": "color"
+          },
+          "surface5": {
+            "value": "rgba({source.primary}, 0.14)",
+            "type": "color"
+          }
         }
       },
       "dark": {
