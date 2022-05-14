@@ -6,7 +6,7 @@
 	"type": "module",
 	"homepage": "creatorsiso.xyz",
 	"scripts": {
-		"build": "style-dictionary build"
+		"build": "node config.js"
 	},
 	"devDependencies": {
 		"style-dictionary": "^3.7.0"
