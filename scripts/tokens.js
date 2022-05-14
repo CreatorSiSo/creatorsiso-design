@@ -1,6 +1,7 @@
 import StyleDictionary from 'style-dictionary';
 
 const tokenPrefix = 'cs';
+const outputDir = 'src/assets/variables/';
 
 const styleDictionary = StyleDictionary.extend({
 	source: ['tokens/**/*.tokens.json'],
@@ -22,19 +23,19 @@ const styleDictionary = StyleDictionary.extend({
 		css: {
 			transformGroup: 'css',
 			prefix: tokenPrefix,
-			buildPath: 'dist/css/',
-			files: [{ destination: '_variables.css', format: 'css/variables' }],
+			buildPath: outputDir,
+			files: [{ destination: 'variables.css', format: 'css/variables' }],
 		},
 		scss: {
 			transformGroup: 'scss',
 			prefix: tokenPrefix,
-			buildPath: 'dist/scss/',
-			files: [{ destination: '_variables.scss', format: 'scss/variables' }],
+			buildPath: outputDir,
+			files: [{ destination: 'variables.scss', format: 'scss/variables' }],
 		},
 		js: {
 			transformGroup: 'js',
 			prefix: tokenPrefix,
-			buildPath: 'dist/js/',
+			buildPath: outputDir,
 			files: [{ destination: 'variables.js', format: 'javascript/es6' }],
 		},
 	},
