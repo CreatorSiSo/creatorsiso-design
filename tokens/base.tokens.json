@@ -669,6 +669,12 @@
           "value": "{ref.tertiary.tertiary90}",
           "type": "color"
         }
+      },
+      "radii": {
+        "default": {
+          "value": "10",
+          "type": "borderRadius"
+        }
       }
     }
   },
