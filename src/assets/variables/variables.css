@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Sat, 14 May 2022 22:29:43 GMT
+ * Generated on Sun, 15 May 2022 15:32:02 GMT
  */
 
 :root {
@@ -78,22 +78,52 @@
   --cs-ref-secondary-secondary95: #e1f3ff;
   --cs-ref-secondary-secondary99: #f9fcff;
   --cs-ref-secondary-secondary100: #ffffff;
+  --cs-ref-tertiary-tertiary0: #000000;
+  --cs-ref-tertiary-tertiary10: #1D1736;
+  --cs-ref-tertiary-tertiary20: #322C4C;
+  --cs-ref-tertiary-tertiary30: #484264;
+  --cs-ref-tertiary-tertiary40: #615A7D;
+  --cs-ref-tertiary-tertiary50: #797297;
+  --cs-ref-tertiary-tertiary60: #948CB2;
+  --cs-ref-tertiary-tertiary70: #AEA6CD;
+  --cs-ref-tertiary-tertiary80: #CAC1EA;
+  --cs-ref-tertiary-tertiary90: #E7DEFF;
+  --cs-ref-tertiary-tertiary95: #F5EEFF;
+  --cs-ref-tertiary-tertiary99: #FFFBFF;
+  --cs-ref-tertiary-tertiary100: #ffffff;
   --cs-source-primary: #00668b;
   --cs-source-secondary: #4e616d;
+  --cs-source-tertiary: #615A7D;
   --cs-gradients-primary-default: linear-gradient(45deg, #78d1ff 0%, #00668b 100%);
   --cs-gradients-primary-hover: linear-gradient(45deg, #c2e8ff 0%, #00668b 100%);
   --cs-gradients-primary-active: linear-gradient(45deg, #c2e8ff 0%, #0080ae 100%);
-  --cs-sys-light-color-primary: #00668b;
-  --cs-sys-light-color-on-primary: #ffffff;
-  --cs-sys-light-color-primary-container: #c2e8ff;
-  --cs-sys-light-color-on-primary-container: #001e2c;
-  --cs-sys-light-elevation-surface1: rgba(#00668b, 0.05);
-  --cs-sys-light-elevation-surface2: rgba(#00668b, 0.08);
-  --cs-sys-light-elevation-surface3: rgba(#00668b, 0.11);
-  --cs-sys-light-elevation-surface4: rgba(#00668b, 0.12);
-  --cs-sys-light-elevation-surface5: rgba(#00668b, 0.14);
-  --cs-sys-dark-color-primary: #78d1ff;
-  --cs-sys-dark-color-on-primary: #00344a;
-  --cs-sys-dark-color-primary-container: #004c69;
-  --cs-sys-dark-color-on-primary-container: #c2e8ff;
+  --cs-sys-elevation-surface1: rgba(#00668b, 0.05);
+  --cs-sys-elevation-surface2: rgba(#00668b, 0.08);
+  --cs-sys-elevation-surface3: rgba(#00668b, 0.11);
+  --cs-sys-elevation-surface4: rgba(#00668b, 0.12);
+  --cs-sys-elevation-surface5: rgba(#00668b, 0.14);
+  --cs-sys-light-primary: #00668b;
+  --cs-sys-light-on-primary: #ffffff;
+  --cs-sys-light-primary-container: #c2e8ff;
+  --cs-sys-light-on-primary-container: #001e2c;
+  --cs-sys-light-secondary: #4e616d;
+  --cs-sys-light-on-secondary: #ffffff;
+  --cs-sys-light-secondary-container: #d1e5f3;
+  --cs-sys-light-on-secondary-container: #0a1e28;
+  --cs-sys-light-tertiary: #615A7D;
+  --cs-sys-light-on-tertiary: #ffffff;
+  --cs-sys-light-tertiary-container: #E7DEFF;
+  --cs-sys-light-on-tertiary-container: #1D1736;
+  --cs-sys-dark-primary: #78d1ff;
+  --cs-sys-dark-on-primary: #00344a;
+  --cs-sys-dark-primary-container: #004c69;
+  --cs-sys-dark-on-primary-container: #c2e8ff;
+  --cs-sys-dark-secondary: #b5c9d7;
+  --cs-sys-dark-on-secondary: #20333e;
+  --cs-sys-dark-secondary-container: #374955;
+  --cs-sys-dark-on-secondary-container: #d1e5f3;
+  --cs-sys-dark-tertiary: #CAC1EA;
+  --cs-sys-dark-on-tertiary: #322C4C;
+  --cs-sys-dark-tertiary-container: #484264;
+  --cs-sys-dark-on-tertiary-container: #E7DEFF;
 }

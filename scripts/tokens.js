@@ -28,13 +28,11 @@ const styleDictionary = StyleDictionary.extend({
 		},
 		scss: {
 			transformGroup: 'scss',
-			prefix: tokenPrefix,
 			buildPath: outputDir,
 			files: [{ destination: 'variables.scss', format: 'scss/variables' }],
 		},
 		js: {
 			transformGroup: 'js',
-			prefix: tokenPrefix,
 			buildPath: outputDir,
 			files: [{ destination: 'variables.js', format: 'javascript/es6' }],
 		},

@@ -24,12 +24,19 @@ import BaseButton from '@/components/BaseButton.vue'
 		<section>
 			<h2>Components:</h2>
 			<div class="components-list">
-				<BaseButton variant="filled">Button/Filled</BaseButton>
 				<BaseButton variant="filled">Button</BaseButton>
-				<BaseButton variant="outlined">Button/Outlined</BaseButton>
+				<BaseButton variant="filled">Button/Filled/Enabled</BaseButton>
+				<BaseButton disabled variant="filled">
+					Button/Filled/Disabled
+				</BaseButton>
 				<BaseButton variant="outlined">Button</BaseButton>
-				<BaseButton variant="text">Button/Text</BaseButton>
+				<BaseButton variant="outlined">Button/Outlined/Enabled</BaseButton>
+				<BaseButton disabled variant="outlined">
+					Button/Outlined/Disabled
+				</BaseButton>
 				<BaseButton variant="text">Button</BaseButton>
+				<BaseButton variant="text">Button/Text/Enabled</BaseButton>
+				<BaseButton disabled variant="text">Button/Text/Disabled</BaseButton>
 			</div>
 		</section>
 	</main>
