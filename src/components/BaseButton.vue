@@ -46,8 +46,7 @@ const classes = computed(() => {
 	transition: background-color 250ms ease;
 
 	&.button--filled {
-		background-color: var(--cs-sys-light-primary);
-		color: var(--cs-sys-light-on-primary);
+		color: cs.$sys-light-on-primary;
 
 		@include button-states(
 			(
@@ -56,38 +55,8 @@ const classes = computed(() => {
 			)
 		);
 
-		&:disabled {
-			background-color: gray;
-		}
-	}
-
-	&.button--outlined {
-		box-shadow: inset 0 0 0 1px hwb(205 44% 51%);
-		color: var(--cs-sys-light-primary);
-
-		@include button-states(
-			(
-				'base': #ffffff00,
-				'blend': cs.$sys-light-on-primary,
-			)
-		);
-	}
-
-	&.button--text {
-		color: var(--cs-sys-light-primary);
-
-		@include button-states(
-			(
-				'base': #ffffff00,
-				'blend': cs.$sys-light-on-primary,
-			)
-		);
-	}
-
-	@media (prefers-color-scheme: dark) {
-		&.button--filled {
-			background-color: var(--cs-sys-dark-primary);
-			color: var(--cs-sys-dark-on-primary);
+		@media (prefers-color-scheme: dark) {
+			color: cs.$sys-dark-on-primary;
 
 			@include button-states(
 				(
@@ -95,16 +64,27 @@ const classes = computed(() => {
 					'blend': cs.$sys-dark-on-primary,
 				),
 				(
+					'default': 0%,
 					'hover': cs.$ref-opacity-darken1,
-					'focus': cs.$ref-opacity-darken2,
 					'active': cs.$ref-opacity-darken2,
 				)
 			);
 		}
+	}
 
-		&.button--outlined {
-			box-shadow: inset 0 0 0 1px hwb(205 44% 51%);
-			color: var(--cs-sys-dark-primary);
+	&.button--outlined {
+		box-shadow: inset 0 0 0 1px hwb(205 44% 51%);
+		color: cs.$sys-light-primary;
+
+		@include button-states(
+			(
+				'base': #ffffff00,
+				'blend': cs.$sys-light-primary,
+			)
+		);
+
+		@media (prefers-color-scheme: dark) {
+			color: cs.$sys-dark-primary;
 
 			@include button-states(
 				(
@@ -113,9 +93,20 @@ const classes = computed(() => {
 				)
 			);
 		}
+	}
 
-		&.button--text {
-			color: var(--cs-sys-dark-primary);
+	&.button--text {
+		color: cs.$sys-light-primary;
+
+		@include button-states(
+			(
+				'base': #ffffff00,
+				'blend': cs.$sys-light-primary,
+			)
+		);
+
+		@media (prefers-color-scheme: dark) {
+			color: cs.$sys-dark-primary;
 
 			@include button-states(
 				(

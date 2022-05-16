@@ -1,10 +1,10 @@
 /**
  * Do not edit directly
- * Generated on Mon, 16 May 2022 06:14:10 GMT
+ * Generated on Mon, 16 May 2022 19:48:23 GMT
  */
 
 :root {
-  --cs-font-families-roboto: Roboto;
+  --cs-font-families-manrope: Manrope;
   --cs-line-heights-0: 64;
   --cs-line-heights-1: 52;
   --cs-line-heights-2: 44;
@@ -91,6 +91,32 @@
   --cs-ref-tertiary-tertiary95: #F5EEFF;
   --cs-ref-tertiary-tertiary99: #FFFBFF;
   --cs-ref-tertiary-tertiary100: #ffffff;
+  --cs-ref-neutral-neutral0: #000000;
+  --cs-ref-neutral-neutral10: #191C1E;
+  --cs-ref-neutral-neutral20: #2E3133;
+  --cs-ref-neutral-neutral30: #454749;
+  --cs-ref-neutral-neutral40: #5C5F61;
+  --cs-ref-neutral-neutral50: #757779;
+  --cs-ref-neutral-neutral60: #8F9193;
+  --cs-ref-neutral-neutral70: #A9ABAD;
+  --cs-ref-neutral-neutral80: #C5C6C9;
+  --cs-ref-neutral-neutral90: #E1E2E5;
+  --cs-ref-neutral-neutral95: #F0F1F4;
+  --cs-ref-neutral-neutral99: #FBFCFF;
+  --cs-ref-neutral-neutral100: #ffffff;
+  --cs-ref-neutral-variant-neutral-variant0: #000000;
+  --cs-ref-neutral-variant-neutral-variant10: #161C20;
+  --cs-ref-neutral-variant-neutral-variant20: #2A3136;
+  --cs-ref-neutral-variant-neutral-variant30: #41484D;
+  --cs-ref-neutral-variant-neutral-variant40: #585F64;
+  --cs-ref-neutral-variant-neutral-variant50: #71787D;
+  --cs-ref-neutral-variant-neutral-variant60: #8B9298;
+  --cs-ref-neutral-variant-neutral-variant70: #A5ACB2;
+  --cs-ref-neutral-variant-neutral-variant80: #C0C7CD;
+  --cs-ref-neutral-variant-neutral-variant90: #DCE3E9;
+  --cs-ref-neutral-variant-neutral-variant95: #EBF2F8;
+  --cs-ref-neutral-variant-neutral-variant99: #F9FCFF;
+  --cs-ref-neutral-variant-neutral-variant100: #ffffff;
   --cs-ref-opacity-lighten1: 10%;
   --cs-ref-opacity-lighten2: 20%;
   --cs-ref-opacity-darken1: 20%;
@@ -98,6 +124,8 @@
   --cs-source-primary: #00668b;
   --cs-source-secondary: #4e616d;
   --cs-source-tertiary: #615A7D;
+  --cs-source-neutral: #5C5F61;
+  --cs-source-neutral-variant: #585F64;
   --cs-gradients-primary-default: linear-gradient(45deg, #78d1ff 0%, #00668b 100%);
   --cs-gradients-primary-hover: linear-gradient(45deg, #c2e8ff 0%, #00668b 100%);
   --cs-gradients-primary-active: linear-gradient(45deg, #c2e8ff 0%, #0080ae 100%);
@@ -118,6 +146,10 @@
   --cs-sys-light-on-tertiary: #ffffff;
   --cs-sys-light-tertiary-container: #E7DEFF;
   --cs-sys-light-on-tertiary-container: #1D1736;
+  --cs-sys-light-background: #FBFCFF;
+  --cs-sys-light-on-background: #191C1E;
+  --cs-sys-light-surface: #FBFCFF;
+  --cs-sys-light-on-surface: #191C1E;
   --cs-sys-dark-primary: #78d1ff;
   --cs-sys-dark-on-primary: #00344a;
   --cs-sys-dark-primary-container: #004c69;
@@ -130,4 +162,10 @@
   --cs-sys-dark-on-tertiary: #322C4C;
   --cs-sys-dark-tertiary-container: #484264;
   --cs-sys-dark-on-tertiary-container: #E7DEFF;
+  --cs-sys-dark-background: #191C1E;
+  --cs-sys-dark-on-background: #E1E2E5;
+  --cs-sys-dark-surface: #191C1E;
+  --cs-sys-dark-on-surface: #C5C6C9;
+  --cs-sys-radii-large: 20;
+  --cs-sys-radii-medium: 10;
 }

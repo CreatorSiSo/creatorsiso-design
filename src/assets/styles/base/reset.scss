@@ -1,0 +1,36 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+	font-size: 62.5%;
+}
+
+body {
+	height: 100%;
+	margin: 0;
+	font-size: 1.6rem;
+}
+
+:where(h1, h2, h3, h4, h5, h6) {
+	font-size: unset;
+	font-weight: unset;
+	margin: 0;
+}
+
+:where(button) {
+	border-width: 0;
+	border-style: solid;
+	background-color: transparent;
+	font-size: unset;
+	padding: 0;
+	cursor: pointer;
+}
+
+:where(a) {
+	text-decoration: none;
+	color: inherit;
+}

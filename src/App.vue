@@ -42,50 +42,19 @@ import BaseButton from '@/components/BaseButton.vue'
 	</main>
 </template>
 
-<style>
-@import url(@/assets/variables/variables.css);
-
-*,
-*::before,
-*::after {
-	box-sizing: border-box;
+<style scoped lang="scss">
+.private:where(*) {
+	user-select: none;
 }
 
 html {
-	height: 100%;
-	font-size: 62.5%;
-}
+	background-color: var(--cs-sys-light-background);
+	color: var(--cs-sys-light-on-background);
 
-body {
-	height: 100%;
-	margin: 0;
-	font-size: 1.6rem;
-}
-
-:where(h1, h2, h3, h4, h5, h6) {
-	font-size: unset;
-	font-weight: unset;
-	margin: 0;
-}
-
-:where(button) {
-	border-width: 0;
-	border-style: solid;
-	background-color: transparent;
-	font-size: unset;
-	padding: 0;
-	cursor: pointer;
-}
-
-:where(a) {
-	text-decoration: none;
-	color: inherit;
-}
-</style>
-
-<style lang="scss">
-.private:where(*) {
-	user-select: none;
+	@media (prefers-color-scheme: dark) {
+		background-color: var(--cs-sys-dark-background);
+		color: var(--cs-sys-dark-on-background);
+	}
 }
 
 main {

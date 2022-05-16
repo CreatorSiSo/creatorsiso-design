@@ -4,15 +4,21 @@
 
 @mixin button-states(
 	$background-colors: (
-		'base': #be3e3e,
-		'blend': #ffffff,
+		'base': #ffffff00,
+		'blend': #ffffffff,
 	),
 	$blend-amounts: (
+		'default': 0%,
 		'hover': cs.$ref-opacity-lighten1,
-		'focus': cs.$ref-opacity-lighten2,
 		'active': cs.$ref-opacity-lighten2,
 	)
 ) {
+	background-color: color.mix(
+		map.get($background-colors, 'blend'),
+		map.get($background-colors, 'base'),
+		map.get($blend-amounts, 'default')
+	);
+
 	&:enabled:hover {
 		background-color: color.mix(
 			map.get($background-colors, 'blend'),
@@ -21,14 +27,7 @@
 		);
 	}
 
-	&:enabled:focus {
-		background-color: color.mix(
-			map.get($background-colors, 'blend'),
-			map.get($background-colors, 'base'),
-			map.get($blend-amounts, 'focus')
-		);
-	}
-
+	&:enabled:focus,
 	&:enabled:active {
 		background-color: color.mix(
 			map.get($background-colors, 'blend'),
