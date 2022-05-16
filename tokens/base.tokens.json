@@ -515,6 +515,24 @@
           "value": "#ffffff",
           "type": "color"
         }
+      },
+      "opacity": {
+        "lighten1": {
+          "value": "10%",
+          "type": "opacity"
+        },
+        "lighten2": {
+          "value": "20%",
+          "type": "opacity"
+        },
+        "darken1": {
+          "value": "20%",
+          "type": "opacity"
+        },
+        "darken2": {
+          "value": "30%",
+          "type": "opacity"
+        }
       }
     },
     "source": {
