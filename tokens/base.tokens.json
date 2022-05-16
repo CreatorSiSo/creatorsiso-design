@@ -819,6 +819,16 @@
           "value": "{ref.neutral.neutral80}",
           "type": "color"
         }
+      },
+      "radii": {
+        "large": {
+          "value": "20",
+          "type": "borderRadius"
+        },
+        "medium": {
+          "value": "10",
+          "type": "borderRadius"
+        }
       }
     }
   },
