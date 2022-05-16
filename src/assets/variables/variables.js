@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Sun, 15 May 2022 15:32:02 GMT
+ * Generated on Mon, 16 May 2022 06:14:10 GMT
  */
 
 export const FontFamiliesRoboto = "Roboto";
@@ -90,6 +90,10 @@ export const RefTertiaryTertiary90 = "#E7DEFF";
 export const RefTertiaryTertiary95 = "#F5EEFF";
 export const RefTertiaryTertiary99 = "#FFFBFF";
 export const RefTertiaryTertiary100 = "#ffffff";
+export const RefOpacityLighten1 = "10%";
+export const RefOpacityLighten2 = "20%";
+export const RefOpacityDarken1 = "20%";
+export const RefOpacityDarken2 = "30%";
 export const SourcePrimary = "#00668b";
 export const SourceSecondary = "#4e616d";
 export const SourceTertiary = "#615A7D";

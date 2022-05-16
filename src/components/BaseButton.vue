@@ -35,44 +35,7 @@ const classes = computed(() => {
 
 <style scoped lang="scss">
 @use '@/assets/variables/variables.scss' as cs;
-@use 'sass:color';
-@use 'sass:map';
-
-@mixin button-states(
-	$background-colors: (
-		'base': #be3e3e,
-		'blend': #ffffff,
-	),
-	$blend-amounts: (
-		'hover': 6%,
-		'focus': 12%,
-		'active': 18%,
-	)
-) {
-	&:enabled:hover {
-		background-color: color.mix(
-			map.get($background-colors, 'blend'),
-			map.get($background-colors, 'base'),
-			map.get($blend-amounts, 'hover')
-		);
-	}
-
-	&:enabled:focus {
-		background-color: color.mix(
-			map.get($background-colors, 'blend'),
-			map.get($background-colors, 'base'),
-			map.get($blend-amounts, 'focus')
-		);
-	}
-
-	&:enabled:active {
-		background-color: color.mix(
-			map.get($background-colors, 'blend'),
-			map.get($background-colors, 'base'),
-			map.get($blend-amounts, 'active')
-		);
-	}
-}
+@use '@/assets/styles/mixins/states.scss' as *;
 
 .button {
 	padding: 1rem 1.6rem;
@@ -101,10 +64,24 @@ const classes = computed(() => {
 	&.button--outlined {
 		box-shadow: inset 0 0 0 1px hwb(205 44% 51%);
 		color: var(--cs-sys-light-primary);
+
+		@include button-states(
+			(
+				'base': #ffffff00,
+				'blend': cs.$sys-light-on-primary,
+			)
+		);
 	}
 
 	&.button--text {
 		color: var(--cs-sys-light-primary);
+
+		@include button-states(
+			(
+				'base': #ffffff00,
+				'blend': cs.$sys-light-on-primary,
+			)
+		);
 	}
 
 	@media (prefers-color-scheme: dark) {
@@ -118,9 +95,9 @@ const classes = computed(() => {
 					'blend': cs.$sys-dark-on-primary,
 				),
 				(
-					'hover': 10%,
-					'focus': 20%,
-					'active': 20%,
+					'hover': cs.$ref-opacity-darken1,
+					'focus': cs.$ref-opacity-darken2,
+					'active': cs.$ref-opacity-darken2,
 				)
 			);
 		}
@@ -128,13 +105,24 @@ const classes = computed(() => {
 		&.button--outlined {
 			box-shadow: inset 0 0 0 1px hwb(205 44% 51%);
 			color: var(--cs-sys-dark-primary);
+
+			@include button-states(
+				(
+					'base': #ffffff00,
+					'blend': cs.$sys-dark-primary,
+				)
+			);
 		}
 
 		&.button--text {
 			color: var(--cs-sys-dark-primary);
-		}
 
-		&:disabled {
+			@include button-states(
+				(
+					'base': #ffffff00,
+					'blend': cs.$sys-dark-primary,
+				)
+			);
 		}
 	}
 }

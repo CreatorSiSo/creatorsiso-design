@@ -1,0 +1,39 @@
+@use '@/assets/variables/variables.scss' as cs;
+@use 'sass:color';
+@use 'sass:map';
+
+@mixin button-states(
+	$background-colors: (
+		'base': #be3e3e,
+		'blend': #ffffff,
+	),
+	$blend-amounts: (
+		'hover': cs.$ref-opacity-lighten1,
+		'focus': cs.$ref-opacity-lighten2,
+		'active': cs.$ref-opacity-lighten2,
+	)
+) {
+	&:enabled:hover {
+		background-color: color.mix(
+			map.get($background-colors, 'blend'),
+			map.get($background-colors, 'base'),
+			map.get($blend-amounts, 'hover')
+		);
+	}
+
+	&:enabled:focus {
+		background-color: color.mix(
+			map.get($background-colors, 'blend'),
+			map.get($background-colors, 'base'),
+			map.get($blend-amounts, 'focus')
+		);
+	}
+
+	&:enabled:active {
+		background-color: color.mix(
+			map.get($background-colors, 'blend'),
+			map.get($background-colors, 'base'),
+			map.get($blend-amounts, 'active')
+		);
+	}
+}
